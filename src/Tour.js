@@ -9,6 +9,7 @@ const Tour = ({ id, image, info, price, name, removeTour }) => {
 				<div className="tour-info">
 					<h4>{name}</h4>
 					<h4 className="tour-price">${price}</h4>
+ 
 				</div>
 				<p>
 					{readMore ? info : `${info.substring(0, 200)}...`}
@@ -17,6 +18,8 @@ const Tour = ({ id, image, info, price, name, removeTour }) => {
 				<button className="delete-btn" onClick={() => removeTour(id)}>
 					not interersted
 				</button>
+ 
+					 
 			</footer>
 		</article>
 	);
